@@ -6,3 +6,13 @@ metadata:
     name: roboshop
     environment: dev
     purpose: poc
+
+#kubectl apply -f 01-namespace.yaml - This command is used to create a namespace in Kubernetes using the configuration specified in the 01-namespace.yaml file. The namespace will be created with the name "roboshop" and the specified labels.
+
+#kubectl get namespaces / kubectl get ns - This command is used to retrieve a list of all namespaces in the Kubernetes cluster. It will display the names of the namespaces along with their status and other relevant information.
+
+#kubectl describe namespace roboshop - This command is used to get detailed information about the "roboshop" namespace. It will provide information such as the labels, annotations, resource quotas, and other details related to the namespace.
+
+#kubectl get namespace roboshop -o yaml - This command is used to retrieve the details of the "roboshop" namespace in YAML format. It will display the configuration and metadata of the namespace in a structured format.
+
+#kubectl delete -f 01-namespace.yaml - This command is used to delete the namespace created using the 01-namespace.yaml file. It will remove the "roboshop" namespace and all associated resources within it from the Kubernetes cluster.
