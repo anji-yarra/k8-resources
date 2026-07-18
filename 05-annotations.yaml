@@ -10,6 +10,10 @@ metadata:
     description: This pod is used for testing annotations in Kubernetes.
     imagerepository: nginx:latest
     owner: Anji
+spec:
+  containers:
+    - name: nginx
+      image: nginx:latest
 
 
 #Annotations in Kubernetes are key-value pairs that can be attached to objects such as pods, services, and deployments. 
