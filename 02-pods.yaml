@@ -23,12 +23,13 @@ spec: #specification for the pod's desired state
 
 
 #ImagePullBackoff - This error occurs when Kubernetes is unable to pull the specified Docker image for a container. 
-                    It can happen due to various reasons, such as incorrect image name, missing image in the registry, or authentication issues. 
-                    To resolve this, ensure that the image name is correct, the image exists in the registry, and any necessary authentication credentials are provided.
+                    #It can happen due to various reasons, such as incorrect image name, missing image in the registry, or authentication issues. 
+                    #To resolve this, ensure that the image name is correct, the image exists in the registry, and any necessary authentication credentials are provided.
+
 
 #CrashLoopBackoff - This error occurs when a container in a pod repeatedly fails to start and enters a crash loop. 
-                    It can happen due to issues with the container's configuration, dependencies, or runtime environment. 
-                    To resolve this, check the container logs for error messages, review the container's configuration and dependencies, and ensure that the necessary resources are available for the container to run successfully.
+                    #It can happen due to issues with the container's configuration, dependencies, or runtime environment. 
+                    #To resolve this, check the container logs for error messages, review the container's configuration and dependencies, and ensure that the necessary resources are available for the container to run successfully.
 
 #To login to the pod, you can use the following command:
 

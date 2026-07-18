@@ -14,3 +14,38 @@ spec:
       image: almalinux:9
       command: ["sleep" , "20"]
 
+#kubectl exec -it multi-container-pod -c almalinux -- bash - This command is used to execute a bash shell inside the "almalinux" container of the "multi-container-pod". 
+                                                             The "-c" flag specifies the container name, allowing you to target a specific container within the pod.
+
+#[ ec2-user@ip-172-31-24-215 ~/k8-resources ]$ kubectl exec -it multi-container-pod -c almalinux -- bash
+# [root@multi-container-pod /]# curl localhost
+# <!DOCTYPE html>
+# <html>
+# <head>
+# <title>Welcome to nginx!</title>
+# <style>
+# html { color-scheme: light dark; }
+# body { width: 35em; margin: 0 auto;
+# font-family: Tahoma, Verdana, Arial, sans-serif; }
+# </style>
+# </head>
+# <body>
+# <h1>Welcome to nginx!</h1>
+# <p>If you see this page, nginx is successfully installed and working.
+# Further configuration is required for the web server, reverse proxy,
+# API gateway, load balancer, content cache, or other features.</p>
+
+# <p>For online documentation and support please refer to
+# <a href="https://nginx.org/">nginx.org</a>.<br/>
+# To engage with the community please visit
+# <a href="https://community.nginx.org/">community.nginx.org</a>.<br/>
+# For enterprise grade support, professional services, additional
+# security features and capabilities please refer to
+# <a href="https://f5.com/nginx">f5.com/nginx</a>.</p>
+
+# <p><em>Thank you for using nginx.</em></p>
+# </body>
+# </html>
+
+#above output is the result of executing the curl command inside the almalinux container, which sends a request to the nginx container running in the same pod.
+                              
