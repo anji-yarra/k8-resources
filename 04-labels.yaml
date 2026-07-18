@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: labels-pod
+  labels:
+    project: roboshop
+    environment: dev
+    purpose: poc
+  spec:
+    containers:
+      - name: nginx
+        image: nginx:latest
+
+#Labels in Kubernetes are key-value pairs that are attached to objects such as pods, services, and deployments. 
+    #They are used to organize and categorize resources, allowing for easy selection and filtering of objects based on specific criteria. 
+    #Labels can be used for grouping, identifying, and managing resources within a Kubernetes cluster.

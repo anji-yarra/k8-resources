@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: annotations
+  labels:
+    project: roboshop
+    environment: dev
+    purpose: poc
+  annotations:
+    description: This pod is used for testing annotations in Kubernetes.
+    imagerepository: nginx:latest
+    owner: Anji
+
+
+#Annotations in Kubernetes are key-value pairs that can be attached to objects such as pods, services, and deployments. 
+    #They provide additional metadata and information about the object, which can be used by tools, scripts, or other components in the Kubernetes ecosystem. 
+    #nnotations are not used for identifying or selecting objects like labels; instead, they serve as a way to store arbitrary non-identifying metadata.
+
+#lables vs Annotations in Kubernetes:
+#labels are used for identifying and selecting objects, while annotations are used for storing additional metadata. 
+    #Labels are typically used for grouping and filtering objects based on specific criteria, 
+    #hile annotations provide a way to attach arbitrary information to objects without affecting their selection or identification.
