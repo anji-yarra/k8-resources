@@ -12,3 +12,24 @@ spec: #specification for the pod's desired state
       image: nginx:latest #image specifies the Docker image to be used for the container.
       ports: #ports specify the network ports to expose from the container.
         - containerPort: 80 #containerPort specifies the port number to expose from the container.
+
+
+#kubectl apply -f 02-pods.yaml
+#kubectl get pods
+#kubectl describe pod nginx
+#kubectl get pod nginx -o yaml - This command is used to retrieve the details of the "nginx" pod in YAML format. It will display the configuration and metadata of the pod in a structured format.
+#kubectl delete -f 02-pods.yaml
+#kubectl get pods -n roboshop
+
+
+#ImagePullBackoff - This error occurs when Kubernetes is unable to pull the specified Docker image for a container. 
+                    It can happen due to various reasons, such as incorrect image name, missing image in the registry, or authentication issues. 
+                    To resolve this, ensure that the image name is correct, the image exists in the registry, and any necessary authentication credentials are provided.
+
+#CrashLoopBackoff - This error occurs when a container in a pod repeatedly fails to start and enters a crash loop. 
+                    It can happen due to issues with the container's configuration, dependencies, or runtime environment. 
+                    To resolve this, check the container logs for error messages, review the container's configuration and dependencies, and ensure that the necessary resources are available for the container to run successfully.
+
+#To login to the pod, you can use the following command:
+
+#kubectl exec -it nginx -- /bin/bash                    
