@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: Shared-volume-pod
+  name: shared-volume-pod
 spec:
   containers:
   - name: writer-container
