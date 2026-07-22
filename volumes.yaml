@@ -9,7 +9,7 @@ spec:
     command: ["/bin/sh", "-c", "echo 'Hello from writer' > /shared-data/hello.txt; sleep 3600"]
     volumeMounts:
     - name: my-shared-volume
-      mountPath: /shared-date
+      mountPath: /shared-data
   - name: reader-container
     image: busybox:latest
     command: ["/bin/sh", "-c", "cat /shared-data/hello.txt; sleep 3600"]
