@@ -13,5 +13,5 @@ spec:
   volumes:
   - name: ec2-storage
     hostPath:
-      path: /var/tmp/my-app-data
+      path: /var/tmp/
       type: Directory
