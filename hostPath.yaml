@@ -3,7 +3,7 @@ kind: Pod
 metadata: 
   name: hostpath-test-pod
 spec:
-  containers: 
+  container: 
   - name: app-container
     image: busybox:latest
     commad: ["/bin/sh", "-c", "cat /container-data/host-file.txt; sleep 3600"]
