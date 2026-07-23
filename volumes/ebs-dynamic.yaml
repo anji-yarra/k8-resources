@@ -15,12 +15,12 @@ kind: Pod
 metadata: 
   name: ebs-dynamic
 spec:
-  container:
+  containers:
   - name: nginx
     image: nginx
     volumeMounts:
     - name: persistance-storage
-      mountPath: /usr/share/nginx/html
+      mountPath: /usr/share/nginx/html`
   volumes:
   - name: persistent-storage
     persistentVolumeClaim:
