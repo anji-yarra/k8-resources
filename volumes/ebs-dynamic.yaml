@@ -22,6 +22,6 @@ spec:
     - name: persistance-storage
       mountPath: /usr/share/nginx/html
   volumes:
-  - name: persistance-storage
+  - name: persistent-storage
     persistentVolumeClaim:
       claimName: ebs-dynamic
